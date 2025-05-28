@@ -4,16 +4,16 @@ import play from "../Assets/Video_reel/play.png";
 
 const Video_Reel = () => {
   return (
-    <section className="bg-[#fdf0e9] px-6 md:px-12 lg:px-24 py-20">
+    <section className="bg-[#fdf0e9] px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Section - Video */}
         <div className="relative rounded-lg overflow-hidden">
           <img
             src={BgImg}
             alt="Video background"
-            className="w-[80%] h-auto object-cover"
+            className="w-[95%] h-auto object-cover"
           />
-          <button className="absolute inset-0 flex items-center justify-center">
+          <button className="absolute inset-0 flex justify-center items-center-safe">
             <div className="w-24 h-24 rounded-full border-2 border-white flex items-center justify-center bg-[rgba(255,255,255,0.2)] hover:scale-105 transition-transform">
               <img src={play} alt="Play button" className="w-8 h-8" />
             </div>

@@ -7,7 +7,7 @@ import About from "./Components/About";
 import Service from "./Components/Service";
 import Pricing from "./Components/Pricing";
 import Contact from "./Components/Contact";
-import Faq from "./Components/Faq";
+import FaqSection from "./Components/FaqSection";
 import Our_Team from "./Components/Our_Team";
 import Portfolio from "./Components/Portfolio";
 import Video_Reel from "./Components/Video_Reel";
@@ -26,7 +26,7 @@ function App() {
           <Portfolio />
           <Our_Team />
           <Pricing />
-          <Faq />
+          <FaqSection />
           <Contact />
           <Footer />
       </BrowserRouter>
