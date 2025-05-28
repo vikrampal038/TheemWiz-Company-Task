@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
-import Service from "./Components/Service";
+// import Service from "./Components/Service";
 import Pricing from "./Components/Pricing";
 import Contact from "./Components/Contact";
 import FaqSection from "./Components/FaqSection";
@@ -20,7 +20,7 @@ function App() {
           <Navbar />
           <Hero />
           <About />
-          <Service />
+          {/* <Service /> */}
           <Work />
           <Video_Reel />
           <Portfolio />

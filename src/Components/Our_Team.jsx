@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
@@ -21,20 +21,8 @@ const Team = [
 const Our_Team = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  const [swiperInstance, setSwiperInstance] = useState(null);
 
-  // We delay setting navigation refs until after first render
-  useEffect(() => {
-    if (swiperInstance) {
-      swiperInstance.params.navigation.prevEl = prevRef.current;
-      swiperInstance.params.navigation.nextEl = nextRef.current;
 
-      // Re-init navigation
-      swiperInstance.navigation.destroy();
-      swiperInstance.navigation.init();
-      swiperInstance.navigation.update();
-    }
-  }, [swiperInstance]);
 
   return (
     <div className="bg-[#1c1c2d] text-white px-4 sm:px-8 md:px-10 lg:px-15 xl:px-20 2xl:px-20 py-10">
@@ -48,23 +36,8 @@ const Our_Team = () => {
           </h1>
         </div>
 
-        <div className="relative max-w-7xl mx-auto">
-          {/* Navigation Buttons */}
-          <div
-            ref={prevRef}
-            className="swiper-prev hidden sm:flex absolute top-[-70px] right-[10%] md:right-[10%] rounded-full border-2 border-[#676877] px-2 content-center-safe py-1 text-white cursor-pointer z-50 select-none"
-          >
-            <span className="text-3xl sm:text-4xl">←</span>
-          </div>
-          <div
-            ref={nextRef}
-            className="swiper-next hidden sm:flex absolute top-[-70px] right-0 md:right-0 rounded-full border-2 border-[#676877] px-2 content-center-safe py-1 text-white cursor-pointer z-50 select-none"
-          >
-            <span className="text-3xl sm:text-4xl">→</span>
-          </div>
-
           <Swiper
-            onSwiper={setSwiperInstance}
+            onSwiper={(swiper) => console.log(swiper)}
             modules={[Autoplay, Pagination, Navigation]}
             pagination={{ clickable: true }}
             navigation={{
@@ -99,7 +72,6 @@ const Our_Team = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
       </div>
 
       {/* Custom Pagination Styling */}

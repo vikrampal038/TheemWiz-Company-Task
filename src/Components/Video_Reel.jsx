@@ -4,7 +4,7 @@ import play from "../Assets/Video_reel/play.png";
 
 const Video_Reel = () => {
   return (
-    <section className="bg-[#fdf0e9] px-6 md:px-12 lg:px-24">
+    <section className="bg-[#fdf0e9] px-6 md:px-12 lg:px-24 pb-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Section - Video */}
         <div className="relative rounded-lg overflow-hidden">
