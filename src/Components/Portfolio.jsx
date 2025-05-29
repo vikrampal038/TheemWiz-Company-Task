@@ -112,10 +112,10 @@ const Portfolio = () => {
             src={icon}
             alt="star batch"
           />
-          <div className="mx-4 sm:mx-0 md:px-10   md:mt-10 mt-20 pt-10">
-            <div className="px-4 sm:px-10 md:px-20 sm:pt-10 md:pt-20 flex flex-col items-center lg:flex-col lg:justify-between">
+          <div className="">
+            <div className="px-4 sm:px-10 md:px-20 sm:pt-10 md:pt-20 flex flex-col items-center lg:flex-row lg:justify-between">
               {/* detail section */}
-              <div className="mb-6 lg:mb-0 text-center lg:text-left">
+              <div className="mb-6 mt-15 lg:mb-0 text-center lg:text-left">
                 <h4 className="text-[#ef6d58] text-sm sm:text-md uppercase tracking-widest mb-2">
                   Get Started
                 </h4>
@@ -131,18 +131,18 @@ const Portfolio = () => {
               <img
                 src={Block}
                 alt="blockImg"
-                className="  w-40 sm:w-60 md:w-100 lg:w-80"
+                className="  w-80 sm:w-60 md:w-80 lg:w-100"
               />
 
               {/* model section (hidden on small) */}
-              <div className="relative mt-6 lg:mt-0  lg:block">
+              <div className="relative mt-3 lg:mt-3  lg:block">
                 <img
-                  className="absolute top-4 sm:top-6 md:top-10 right-4 sm:right-20 md:right-10 w-16 sm:w-20 md:w-24"
+                  className="absolute top-4 sm:top-6 md:top-5 right-4 sm:right-20 md:right-10 w-16 sm:w-20 md:w-24"
                   src={cloud}
                   alt="cloud img"
                 />
                 <img
-                  className="relative z-20 w-40 sm:w-52 md:w-60 lg:w-72"
+                  className="relative z-20 w-40 sm:w-52 md:w-40 lg:w-40"
                   src={GirlModel}
                   alt="Girl Model"
                 />
