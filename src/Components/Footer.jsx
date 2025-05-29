@@ -33,7 +33,7 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className='flex gap-4 mt-6 lg:mt-0'>
-          <i className="fa-brands fa-facebook-f p-3 text-lg rounded-full text-white bg-[#ef6d58] hover:scale-110 transition-transform cursor-pointer"></i>
+          <i className="fa-brands fa-facebook-f py-3 px-4 text-lg rounded-full text-white bg-[#ef6d58] hover:scale-110 transition-transform cursor-pointer"></i>
           <i className="fa-brands fa-twitter p-3 text-lg rounded-full text-white bg-[#ef6d58] hover:scale-110 transition-transform cursor-pointer"></i>
           <i className="fa-brands fa-instagram p-3 text-lg rounded-full text-white bg-[#ef6d58] hover:scale-110 transition-transform cursor-pointer"></i>
         </div>

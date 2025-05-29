@@ -50,7 +50,7 @@ const Pricing = () => {
               </span>
             </div>
 
-            <button className="w-full py-2 px-4 text-base sm:text-lg bg-[#ffffff] text-[#391400] font-bold rounded-lg">
+            <button className="py-2 px-4 text-base sm:text-lg bg-[#ffffff] text-[#391400] font-bold rounded-lg">
               Contact US
             </button>
           </div>
@@ -91,7 +91,7 @@ const Pricing = () => {
               </span>
             </div>
 
-            <button className="w-full py-2 px-4 text-base sm:text-lg bg-[#ef6d58] text-white font-bold rounded-lg">
+            <button className=" py-2 px-4 text-base sm:text-lg bg-[#ef6d58] text-white font-bold rounded-lg">
               Contact US
             </button>
           </div>
@@ -129,7 +129,7 @@ const Pricing = () => {
               </span>
             </div>
 
-            <button className="w-full py-2 px-4 text-base sm:text-lg bg-[#ffffff] text-[#391400] font-bold rounded-lg">
+            <button className=" py-2 px-4 text-base sm:text-lg bg-[#ffffff] text-[#391400] font-bold rounded-lg">
               Contact US
             </button>
           </div>
